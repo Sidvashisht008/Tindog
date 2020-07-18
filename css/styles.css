@@ -1,0 +1,140 @@
+body{
+    font-family: "Montserrat";   /*font throughout website*/
+}
+
+#title{
+    background-color: #ff4c68;
+    color: #fff;           /*seeting white color for all text within title section*/
+}
+
+.container-fluid{
+    padding: 3% 15% 9%;          
+
+}
+h1{
+    font-family: "Montserrat-Black";   /* Google fonts - Montserrat  */
+    font-size:"3.5rem";
+    line-height: "1.5";    
+
+}
+
+h2{
+    font-family: "Montserrat-Bold";
+    font-size: "3rem";                 /*size of text in h2*/
+    line-height: "1.5";                  /*spaces between text in diff lines*/
+}
+
+h3{
+    font-family: "Montserrat-Bold";   /* Google fonts - Montserrat */
+}
+p{
+    color: #8f8f8f;;
+}
+
+/* Navigation Bar */
+
+.navbar{
+    padding:0 0 4.5rem;   /*adding padding to top-0,left-0 and right-0,bottom-4.5rem*/
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding:0 18px;     /*0 top and bottom ,18px left and right*/
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-light";
+}
+
+/* Download buttons */
+
+.download-button{
+    margin:5% 3% 5% 0%; /*top,right,left,bottom*/
+}
+
+
+/* Title Image */
+
+.title-image{
+width: 60%;    /*60% of it's parent */
+transform: rotate(25deg);  /*rotate image 25deg clockwise */
+position: absolute;        /*setting position so that the z-index can be implemented,position set to absolute as here the normal flow is affected*/
+right:30%;
+}
+
+/* Features section */
+
+#features{
+    background-color:#fff;     /*setting color white to make sure the top layer is not transparent as it's the top layer and phone image will be behind it.*/
+    padding: 7% 15%;   /*7% top and bottom, 15% right and left*/
+    position:relative; /*relative and not absolute so that the normal flow is not affected*, setting position so that z-index can be used*/
+       /*since the title image comes first in HTML flow and features come later , so the later one will be on top,this works even without specifying z-index,just set the positioning*/
+     /*  z-index: 1;        /*now features section will come on top of title image,in normal flow z-index is 0*/
+}
+
+.feature-box{
+    text-align: center;   /*text will be aligned in center , and padding will be added in order to get proper format*/
+    padding: 5%;
+}
+
+.icon{
+    color:#ef8172;       /*set color of icon,initialy were in default black color*/
+    margin-bottom: 1rem;   /*setting bottom margin to have space b/w icon n text*/
+}
+
+.icon:hover{                /*when hover on icon change color to #ff4c68 , hover here is pseudo class */
+    color:#ff4c68;  
+}
+
+/* Testimonials Section */
+
+#testimonials{               /*styling testiomonials section*/      
+     text-align: center;     /*align everything in testimonials section to center*/
+     background-color: #ef8172;
+     color: #fff;
+}
+
+.testimonials-image{
+    width: 10%;            /*width of image*//*changing width will also change height automatically*/
+    border-radius: 100%;   /*seetting border-radius to 100% will make the image appear round*/
+    margin:20px;           /*20px margin all around image to have some space between text and other elements around*/
+}
+
+/*carousel*/
+
+.carousel-item{
+    padding: 7% 15%;       /*7% top and bottom of corousel-item , 15% right and left of corousel-item ,buttoms are not imcluded in padding n will have by default styling*/
+}
+
+
+/*Press Section*/
+
+#press{
+    background-color: #ef8172;      /*including press section in testimonials only,giving same background*/
+    text-align: center;               /*for proper alignment of images or text or whatever is there in particular section,set text-align: center; */
+    padding-bottom: 3%;               /*add some bottom padding to press section to have proper design,and then the images will be lifted up a bit from edges*/
+}
+
+.press-logo{
+    width: 15%;                           /*setting width of images to 50%,will change width and height*/
+    margin: 20px 20px 50px;               /*set some space i.e margin around images top,left,right and bottom*/
+
+} 
+
+/* Pricing Section */
+
+#pricing{
+    padding: 100px;      /*around pricing section*/
+    text-align: center;     /*center align all content in pricing section*/
+}
+.pricing-column
+{
+    padding: 3% 2%;          /*around columns i.e cards*/
+}
+
