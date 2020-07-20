@@ -21,7 +21,7 @@
 
 <body>
 
-  <section id="title">     <!--Section here is for different parts in our website-->
+  <section id="title">     <!--Section here is for different parts in our website-->  <!--unique id's can be useful for navigaion in website-->
     <div class ="container-fluid">    <!--Adding container around navigation bar , text and images to add padding and centering our content-->
     <!-- Nav Bar -->
     <nav class="navbar  navbar-expand-lg navbar-dark ">   <!--Removed bg-dark to remove the by default background colour of nav bar through Bootstrap CSS-->
@@ -32,13 +32,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>      <!--moving to contact section having id as footer-->
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>     <!--moving to pricing section,is'd are unique-->
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
           </li>
       </ul>
    </div>
@@ -51,7 +51,7 @@
     <!--Implementing Bootstrap Grid Layout-->
     <div class="row">
       <div class="col-lg-6">                                  <!--will occupy 50% of screen on large device and 100% on small-->
-        <h1>Meet new and interesting dogs nearby.</h1>
+        <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
         <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>  <!--Bootstrap button--> <!--Apple icon from fontawesome,can also style icon as per req by accesing class in CSS-->
          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>   <!--download-button is a custom class,btn is bootstrap class-->
      </div>
@@ -70,16 +70,16 @@
   <section id="features">
    <div class = "row">
      <div class="feature-box col-lg-4 col-md-12">                         <!--feature-box is custom class-->      <!--will occupy full width on medium screens and below, and on large screens will occupy 1/3rd of screen-->
-       <i class="icon fas fa-check-circle fa-4x"></i> <h3>Easy to use.</h3>    <!--Adding check-circle icon from font awesome-->  <!--fa-4x to increase size of icon as per need-->
+       <i class="icon fas fa-check-circle fa-4x"></i> <h3 class="feature-title">Easy to use.</h3>    <!--Adding check-circle icon from font awesome-->  <!--fa-4x to increase size of icon as per need-->
        <p>So easy to use, even your dog could do it.</p>
      </div>
      
      <div class="feature-box col-lg-4 col-md-12">     <!--will occupy full width on medium screens and below, and on large screens will occupy 1/3rd of screen-->
-       <i class="icon fas fa-bullseye fa-4x"></i> <h3>Elite Clientele</h3>  <!--icon is a custom class to add some styles to icon using CSS-->  <!--Adding bullseye icon from font awesome--> <!--fas is a bootstrap class-->
+       <i class="icon fas fa-bullseye fa-4x"></i> <h3 class="feature-title">Elite Clientele</h3>  <!--icon is a custom class to add some styles to icon using CSS-->  <!--Adding bullseye icon from font awesome--> <!--fas is a bootstrap class-->
        <p>We have all the dogs, the greatest dogs.</p>
       </div>
       <div class="feature-box col-lg-4 col-md-12">    <!--will occupy full width on medium screens and below, and on large screens will occupy 1/3rd of screen-->
-       <i class="icon fas fa-heart fa-4x"></i><h3>Guaranteed to work.</h3>     <!--Adding heart icon from font awesome-->
+       <i class="icon fas fa-heart fa-4x"></i><h3 class="feature-title">Guaranteed to work.</h3>     <!--Adding heart icon from font awesome-->
        <p>Find the love of your dog's life or your money back.</p>
       </div>
 
@@ -96,13 +96,13 @@
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">  <!--Adding slide show-->
       <div class="carousel-inner">
         <div class="carousel-item active">     <!--corousel item which initially to be there when website loads should be set active-->
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
           <img class ="testimonials-image" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York</em>
           
         </div>
         <div class="carousel-item">
-          <h2>My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
           <img class="testimonials-image" src="images/lady-img.jpg" alt="lady-profile">
           <em>Beverly, Illinois</em>
           
@@ -143,7 +143,7 @@
 
     <!--Adding cards--> <!--3 diff cards-->
      
-    <h2>A Plan for Every Dog's Needs</h2>
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
   <div class="row">
@@ -157,7 +157,7 @@
       </div>
 
       <div class="card-body">
-        <h2>Free</h2>
+        <h2 class="price-text">Free</h2>
         <p>5 Matches Per Day</p>
         <p>10 Messages Per Day</p>
         <p>Unlimited App Usage</p>
@@ -179,7 +179,7 @@
          </div>
 
          <div class="card-body">
-           <h2>$49 / mo</h2>
+           <h2 class="price-text">$49 / mo</h2>
            <p>Unlimited Matches</p>
            <p>Unlimited Messages</p>
            <p>Unlimited App Usage</p>
@@ -201,7 +201,7 @@
           
         </div>
         <div class="card-body">
-          <h2>$99 / mo</h2>
+          <h2 class="price-text">$99 / mo</h2>
           <p>Pirority Listing</p>
           <p>Unlimited Matches</p>
           <p>Unlimited Messages</p>
@@ -223,9 +223,9 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>       <!--separate class for h3 as we have already styled h3 before, n we can't don't want to override previous styling,therefore targetting this h3 using a class-->
+    <button type="button" class= "download-button btn btn-lg btn-dark"><i class="fab fa-apple"></i>Download</button>
+    <button class="download button btn btn-lg btn-light" type="button"><i class="fab fa-google-play"></i>Download</button>      <!--download button is custom class here,we already styled button while styling the title section,using same stled class for cta section buttons-->
 
   </section>
 
@@ -234,7 +234,11 @@
 
   <footer id="footer">
 
-    <p>© Copyright 2018 TinDog</p>
+    <i class="social-icon fab fa-facebook-f"></i>     <!--from font-awesome icons-->
+    <i class="social-icon fab fa-twitter"></i>         <!--social-icon is custom class-->
+    <i class="social-icon fab fa-instagram"></i>        
+    <i class="social-icon fas fa-envelope"></i>
+    <p>© Copyright 2020 TinDog</p>
 
   </footer>
 

@@ -1,34 +1,38 @@
 body{
     font-family: "Montserrat";   /*font throughout website*/
+    text-align: center;          /*align content in center throughout website*/
 }
 
 #title{
     background-color: #ff4c68;
     color: #fff;           /*seeting white color for all text within title section*/
+    text-align:left;         /*content will be left aligned*/
 }
 
 .container-fluid{
     padding: 3% 15% 9%;          
 
 }
-h1{
-    font-family: "Montserrat-Black";   /* Google fonts - Montserrat  */
-    font-size:"3.5rem";
-    line-height: "1.5";    
-
-}
-
-h2{
+h1,h2,h3,h4,h5,h6{
     font-family: "Montserrat-Bold";
-    font-size: "3rem";                 /*size of text in h2*/
-    line-height: "1.5";                  /*spaces between text in diff lines*/
 }
 
-h3{
-    font-family: "Montserrat-Bold";   /* Google fonts - Montserrat */
-}
 p{
     color: #8f8f8f;;
+}
+
+/* Headings */
+
+.big-heading{
+    font-family: "Montserrat-Black";   /* Google fonts - Montserrat  */
+    font-size:"3.5rem";
+    line-height: "1.5";
+
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /* Navigation Bar */
@@ -79,7 +83,7 @@ right:30%;
 }
 
 .feature-box{
-    text-align: center;   /*text will be aligned in center , and padding will be added in order to get proper format*/
+   /* text-align: center;   /*text will be aligned in center , and padding will be added in order to get proper format*/
     padding: 5%;
 }
 
@@ -92,10 +96,14 @@ right:30%;
     color:#ff4c68;  
 }
 
+.feature-tite{
+    font-size: 1.5rem;
+}
+
 /* Testimonials Section */
 
 #testimonials{               /*styling testiomonials section*/      
-     text-align: center;     /*align everything in testimonials section to center*/
+   /*  text-align: center;     /*align everything in testimonials section to center*/
      background-color: #ef8172;
      color: #fff;
 }
@@ -106,6 +114,12 @@ right:30%;
     margin:20px;           /*20px margin all around image to have some space between text and other elements around*/
 }
 
+
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
 /*carousel*/
 
 .carousel-item{
@@ -113,11 +127,12 @@ right:30%;
 }
 
 
+
 /*Press Section*/
 
 #press{
     background-color: #ef8172;      /*including press section in testimonials only,giving same background*/
-    text-align: center;               /*for proper alignment of images or text or whatever is there in particular section,set text-align: center; */
+   /* text-align: center;               /*for proper alignment of images or text or whatever is there in particular section,set text-align: center; */
     padding-bottom: 3%;               /*add some bottom padding to press section to have proper design,and then the images will be lifted up a bit from edges*/
 }
 
@@ -131,10 +146,60 @@ right:30%;
 
 #pricing{
     padding: 100px;      /*around pricing section*/
-    text-align: center;     /*center align all content in pricing section*/
+  /*  text-align: center;     /*center align all content in pricing section*/
 }
 .pricing-column
 {
     padding: 3% 2%;          /*around columns i.e cards*/
 }
 
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+/*Call to action section*/
+
+
+#cta{
+    background-color: #ef8172;
+    color: #fff;                /*setting text color*/                         
+    padding: 7% 15%;     /*Add some padding around content in cta section*/
+    /*text-align: center;     /*Cta content center aligned*/
+
+}
+
+/*.cta-heading{                                               /*big heading used instead
+    font-family: "montserrat-black"; 
+    font-size: 3.5rem;
+    line-height: 1.5;   
+}*/
+
+
+/* Footer Section*/
+
+#footer{
+    padding:7% 15%;
+  /*  text-align: center; */
+
+}
+
+.social-icon{
+    margin:20px 10px;
+}
+/* Media Breakpoint */
+
+@media (max-width:995px)              /*will execute when screen width less than or equal 995px,995px hers is media breakpoint*/
+{
+    .title-image{
+        position: static;             /*Image is back into HTML flow,earlier image was having absolute position*/
+        transform:rotate(0);          /*image rotated back to straight*/
+    }
+}
+
+@media (max-width:995px){
+    #title{
+        text-align: center;           /*title section Content is center aligned*/
+    }
+}
